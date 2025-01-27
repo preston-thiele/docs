@@ -72,11 +72,11 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "API Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/call_tools",
+        "api-reference/endpoint/search_tools",
+        "api-reference/endpoint/list_providers"
       ]
     }
   ],

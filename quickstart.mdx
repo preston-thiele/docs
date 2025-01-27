@@ -6,20 +6,24 @@ description: 'Start building awesome documentation in under 5 minutes'
 1. Install Danube
 ```bash
 pip install danube
+pip install openai
 ```
 
 2. Get API Key from Danube dashboard
 
 3. Set API Key in Danube
 ```bash
-danube set-api-key <API_KEY>
+os.environ["DANUBE_API_KEY"] = "<API_KEY>"
+os.environ["OPENAI_API_KEY"] = "<OPENAI_API_KEY>"
 ```
 
 4. Initialize the Danube client
 ```python
 from danube import Danube
+from openai import OpenAI
 
 danube = Danube()
+openai = OpenAI()
 ```
 5. Set the system prompts
 ```python
